@@ -1,0 +1,35 @@
+.header_outer_container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: transparent; */
+    background-color: black;
+    height: 10vh;
+    color: white;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.header_left ul,
+.header_right ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header_left ul li,
+.header_right ul li {
+    margin: 0 20px;
+    cursor: pointer;
+}

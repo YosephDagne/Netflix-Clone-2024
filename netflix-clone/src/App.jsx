@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 function App() {
-  const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log(import.meta.env.VITE_API_URL);
+  }, []);
 
   return (
     <>
